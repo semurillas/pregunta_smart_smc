@@ -1,6 +1,14 @@
-# Pregunta SMART
-Actualmente la empresa de servicios publicos de la ciudad de cali no cuenta con un modelo o sistema de analisis de datos que le permita abordar el mantenimiento de sus activos de distribucion electrica
-de manera predictiva, por lo que se puede decir que las labores que se realizan son mas de mantenimiento correctivo lo que ha venido generando con el paso de los años problemas como indisponibilidades del servicio de manera prolongada
-altos costos de funcionamiento y una baja capacidad de respuesta.
+# Describe claramente el problema para la organización incluyendo el indicador que podría mejorarse
+R/ La organización se enfrenta a un problema crítico de incumplimiento de la meta mensual establecida para el índice SAIDI (System Average Interruption Duration Index). Actualmente, los resultados muestran que el SAIDI 
+mensual está consistentemente por encima de lo esperado, lo que indica que los clientes están experimentando interrupciones del servicio de energía que son más largas de lo que la organización se había propuesto como 
+objetivo.
 
-## Po
+## Por que este problema puede ser resuelto mediante la ciencia de datos o IA?
+R/ Considero que actualmente existen las herramientas tanto en el campo de la ciencia de datos como de la inteligencia artificial que pueden ayudar a resolver esta problematica desde varios puntos de vista, uno de ellos puede ser
+puede ser el analisis de clusteres que permitan agrupar eventos de interrupcion del servicio por su causa en areas y en equipos especifico, lo que permitiria dirigir esfuerzos operativos y recursos para el mantenimiento de estos
+y posterior prevencion o mitigacion de estos eventos.
+
+###Pregunta SMART
+
+¿Cómo se puede reducir el valor mensual del índice SAIDI en un 15% durante los próximos 12 meses, mediante la identificación y priorización de las causas recurrentes de 
+interrupciones del servicio eléctrico utilizando técnicas de análisis de clústeres?
