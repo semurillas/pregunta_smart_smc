@@ -1,1 +1,10 @@
+# Describe claramente la importancia de la columna
+R/Como se habia planteado en la pregunta SMART, la columna o vaRiable seleccionada para realizar este analisis univariado es la duracion de las fallas en 
+"minutos", teniendo en cuenta que este es el principal dato para calcular los indices de calidad en la prestacion del servicio de energia, de igual manera es 
+importante por que esta es la situacion que se debe atender para cumplir con las metas establecidas organizacionalmente y aun mas importante para la satisfaccion 
+de los usuarios del servicio.
 
+Reducir la duración de las fallas tiene un impacto directo en la mejora del SAIDI, lo que a su vez puede contribuir a una mayor satisfacción de los usuarios, 
+reducir costos operativos, y cumplir con regulaciones que exigen niveles mínimos de interrupciones. En un contexto de ciencia de datos o IA, 
+comprender la distribución y los factores que influyen en la duración de las fallas es esencial para desarrollar modelos predictivos que puedan 
+identificar áreas de mejora y optimizar las operaciones de mantenimiento.
