@@ -8,3 +8,19 @@ Reducir la duración de las fallas tiene un impacto directo en la mejora del SAI
 reducir costos operativos, y cumplir con regulaciones que exigen niveles mínimos de interrupciones. En un contexto de ciencia de datos o IA, 
 comprender la distribución y los factores que influyen en la duración de las fallas es esencial para desarrollar modelos predictivos que puedan 
 identificar áreas de mejora y optimizar las operaciones de mantenimiento.
+
+## Realiza el análisis estadístico y gráfico univariado en Python 
+R/El analisis se encuentra en el archivo llamado fallascircuitos.ipnyb
+
+### Conclusiones
+R/ LUego del analisis estadistico y grafico de la variable se concluye lo siguiente:
+
+En el histograma se puede evidenciar que  la mayoría de las fallas tienen una duración corta, con un alto número de observaciones cerca de 0 minutos. 
+Esto indica que, aunque las fallas son comunes, la mayoría de ellas se resuelven rápidamente.
+
+Presencia de Outliers: El boxplot revela la presencia de valores atípicos significativos, que representan fallas con duraciones mucho mayores que el
+promedio. Estos outliers son críticos para el SAIDI, ya que unas pocas fallas prolongadas pueden afectar negativamente el índice.
+
+Impacto en el indicador SAIDI: Dado que el SAIDI está directamente relacionado con la duración de las fallas, es necesario recudicr la duracion de las fallas
+que se constituyen como outliers para la mejora significativa de este indice, intervenir las causas que generan estas fallas de larga duracion puede mejorar
+significativamente el impacto en el indicador.
