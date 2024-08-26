@@ -1,0 +1,37 @@
+# Las 2 columnas seleccionadas tienen importancia para el proyecto de ciencia de datos o IA
+R/ Para el analisis bivariado del proyecto decidi elegir las columnas de duracion de fallas en MINUTOS  y la CAUSA  de la falla pues considero fundamental entender la relacion
+entre estas dos variables para conocer cuales tipos de fallas son las que mas se toman tiempo en atender o mas impactan en el indicador SAIDI que es uno de los objetivos de la pregunta 
+SMART. Entender cuales son las fallas que tienden a tener una mayor duracion me permitira tener un panorama mas claro al ir avanzando en el proceso de utilizar un modelo predictivo o de clasificacion 
+que permita identificar y abordar las causales y circuitos mas criticos para que efectivamente se pueda cumplir con la reduccion del impacto en las prestacion del servicio de la compañia.
+
+#Realiza el análisis bivariado en Python incluyendo el análisis de correlación de acuerdo al tipo de datos
+R/ En concordancia con la eleccion de las dos variables mencionadas en el punto anterior se procede a realizar un analisis bivariado con el que a traves de un grafico boxplot se puede observar cuales son
+las cuasas que mas promedio de fallas aportan en el indicador SAIDI, asi mismo en el mismo grafico se puede observar los outliers de los datos de los minutos por falla. Antes de continuar describiendo el proceso
+es necesario mencionar que para el fin de este proceso que es poder determinar y clasificar las causas que mas afectan el indice SAIDI asi como poder implementar acciones que permitan reducir las variables que
+lo afectan he decidido continuar con este tipo de datos en el dataset y no eliminarlos para que posteriormente puedan ser utilizados en un modelo.
+
+Para el analisis de la correlacion es necesario mencionar que como la variable causa del dataset es categorica se tuvo que implementar el metodo de conversion one hot encoding principalmente por que a diferencia del
+label encoding no me arroja un orden ficticio de la numeracion que le asigna a las variables y por ende no arroja un orden que precisamente refleje la realidad, por tal razon el metodo de one hot encoding 
+se adapta mejor a la situacion de los datos. LUego de aplicar este metodo de conversion se procede entonces a calcular la correlacion entre la variable minutos y las variables generadas por cada causa
+esto se puede apreciar en un grafico de barras en el que de manera general se aprecia cuales son los tipos de fallas que mas se relacionan a una larga duracion de minutos en estas fallas, las causas 915, 906 y 1302
+son las que mas muestran alta correlacion (mas cercanas a uno) que otras variables, asi mismo las causas 924 y 905 son las que muestran menos correlacion, es decir, las mas lejanas a 1.
+
+#CONCLUSIONES
+Durante el análisis bivariado realizado entre la duración de las fallas (MINUTOS) y las diferentes causas de las mismas, se identificaron patrones relevantes que permiten comprender mejor cómo 
+ciertos factores afectan el tiempo de interrupción del servicio eléctrico. A continuación, se presentan las conclusiones más destacadas:
+
+Identificación de Causas Críticas:
+La correlación positiva significativa encontrada con CAUSA_906 (0.266) indica que esta causa tiene un impacto considerable en la duración de las fallas. Esto sugiere que cuando la causa 906 
+está presente, las fallas tienden a ser más prolongadas. Del mismo modo, CAUSA_915 y CAUSA_1302 mostraron correlaciones positivas, aunque más moderadas, lo que también señala una tendencia 
+hacia fallas de mayor duración.
+Causas con Efecto Reductor en la Duración:
+Por otro lado, se observó que CAUSA_924 presenta una correlación negativa significativa (-0.253), lo que indica que esta causa podría estar asociada con una reducción en la duración de las fallas. Este hallazgo es importante ya que sugiere que la presencia de esta causa puede estar vinculada a fallas que se resuelven más rápidamente.
+Causas con Correlación Débil o Nula:
+
+La mayoría de las demás causas presentaron correlaciones cercanas a cero, lo que sugiere que no tienen un impacto notable en la duración de las fallas, o que su efecto es muy débil.
+Este es un hallazgo relevante porque permite enfocar los esfuerzos de mitigación en aquellas causas que realmente influyen en la duración del tiempo de interrupción.
+
+Relevancia para la Reducción del SAIDI:
+Estos resultados son cruciales para la estrategia de reducción del SAIDI. Las causas con alta correlación positiva, como CAUSA_906, deberían ser priorizadas en los planes de acción, ya que su 
+mitigación podría tener un efecto directo y significativo en la reducción del índice SAIDI. Igualmente, las causas que presentan correlaciones negativas podrían ser investigadas para identificar
+buenas prácticas que podrían aplicarse a otros escenarios.
