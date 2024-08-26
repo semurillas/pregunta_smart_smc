@@ -5,6 +5,8 @@ SMART. Entender cuales son las fallas que tienden a tener una mayor duracion me 
 que permita identificar y abordar las causales y circuitos mas criticos para que efectivamente se pueda cumplir con la reduccion del impacto en las prestacion del servicio de la compañia.
 
 #Realiza el análisis bivariado en Python incluyendo el análisis de correlación de acuerdo al tipo de datos
+
+El analisis en el archivo collab se encuentra a partir de la fila 41 "ANALISIS BIVARIADO"
 R/ En concordancia con la eleccion de las dos variables mencionadas en el punto anterior se procede a realizar un analisis bivariado con el que a traves de un grafico boxplot se puede observar cuales son
 las cuasas que mas promedio de fallas aportan en el indicador SAIDI, asi mismo en el mismo grafico se puede observar los outliers de los datos de los minutos por falla. Antes de continuar describiendo el proceso
 es necesario mencionar que para el fin de este proceso que es poder determinar y clasificar las causas que mas afectan el indice SAIDI asi como poder implementar acciones que permitan reducir las variables que
